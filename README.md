@@ -5,11 +5,11 @@ Hadoop1
 This project aim is to  build mapper and reducer scripts which analyzes data from file stored in  /data/nyc/nyc-traffic.csv.
 
 **Run the following commands in order to run the program:**<br>
-1)Clone the program : git clone https://github.uc.edu/suggusi/Hadoop1/tree/master
-2)Run the below command in order to retrieve the log:
+1)Clone the program : git clone https://github.uc.edu/suggusi/Hadoop1/tree/master <br>
+2)Run the below command in order to retrieve the log: <br>
 hadoop jar /opt/hadoop-2.7.1/share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -file /home/suggusi/mapper.py    -mapper /home/suggusi/mapper.py -file /home/suggusi/reducer.py   -reducer /home/suggusi/reducer.py -input /data/nyc/nyc-traffic.csv  -output /user/suggusi/homework4
 
-3)Run the following program to see the output:
+3)Run the following program to see the output: <br>
 hadoop fs -cat /user/suggusi/homework4/*
 
 **OUTPUT OBTAINED:**<br>
